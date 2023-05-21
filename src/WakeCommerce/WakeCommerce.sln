@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33627.172
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WakeCommerce", "WakeCommerce.csproj", "{38EC5A47-C850-4D0F-8965-9CE474EF9EBD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{38EC5A47-C850-4D0F-8965-9CE474EF9EBD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38EC5A47-C850-4D0F-8965-9CE474EF9EBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38EC5A47-C850-4D0F-8965-9CE474EF9EBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38EC5A47-C850-4D0F-8965-9CE474EF9EBD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {794CAA2F-043E-44CB-87D5-9D907F3D510B}
+	EndGlobalSection
+EndGlobal
