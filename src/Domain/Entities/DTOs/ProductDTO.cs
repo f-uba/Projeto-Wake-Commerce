@@ -3,6 +3,11 @@
     public sealed class ProductDTO
     {
         /// <summary>
+        /// Unique identificator of a product
+        /// </summary>
+        public Guid Id { get; set; }
+
+        /// <summary>
         /// Name of the product
         /// </summary>
         public string Name { get; set; }
