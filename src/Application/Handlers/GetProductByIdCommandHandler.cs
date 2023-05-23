@@ -6,7 +6,7 @@ using MediatR;
 
 namespace Application.Handlers
 {
-    internal sealed class GetProductByIdCommandHandler : IRequestHandler<GetProductByIdCommand, ProductDTO>
+    public sealed class GetProductByIdCommandHandler : IRequestHandler<GetProductByIdCommand, ProductDTO>
     {
         private readonly IMapper _mapper;
         private readonly IUnitOfWork _uof;

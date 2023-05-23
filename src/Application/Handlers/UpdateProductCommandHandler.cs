@@ -7,7 +7,7 @@ using MediatR;
 
 namespace Application.Handlers
 {
-    internal sealed class UpdateProductCommandHandler : IRequestHandler<UpdateProductCommand, ProductDTO>
+    public sealed class UpdateProductCommandHandler : IRequestHandler<UpdateProductCommand, ProductDTO>
     {
         private readonly IMapper _mapper;
         private readonly IUnitOfWork _uof;

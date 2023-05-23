@@ -4,7 +4,7 @@ using MediatR;
 
 namespace Application.Handlers
 {
-    internal sealed class DeleteProductByIdCommandHandler : IRequestHandler<DeleteProductByIdCommand, bool>
+    public sealed class DeleteProductByIdCommandHandler : IRequestHandler<DeleteProductByIdCommand, bool>
     {
         private readonly IUnitOfWork _uof;
 

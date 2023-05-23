@@ -8,7 +8,7 @@ using MediatR;
 
 namespace Application.Handlers
 {
-    internal sealed class GetProductListOrderByPropertyCommandHandler : IRequestHandler<GetProductListOrderByPropertyCommand, ICollection<ProductDTO>>
+    public sealed class GetProductListOrderByPropertyCommandHandler : IRequestHandler<GetProductListOrderByPropertyCommand, ICollection<ProductDTO>>
     {
         private readonly IMapper _mapper;
         private readonly IUnitOfWork _uof;
