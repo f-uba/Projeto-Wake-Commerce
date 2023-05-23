@@ -17,7 +17,7 @@ namespace Application.Handlers
             _mapper = mapper;
         }
 
-        public Task<ProductDTO?>? Handle(GetProductByIdCommand request, CancellationToken cancellationToken)
+        public async Task<ProductDTO?>? Handle(GetProductByIdCommand request, CancellationToken cancellationToken)
         {
             try
             {
@@ -27,7 +27,7 @@ namespace Application.Handlers
                 if (product is not null)
                 {
                     var productDto = _mapper.Map<ProductDTO>(product);
-                    return Task.FromResult(productDto);
+                    return await Task.FromResult(productDto);
                 }
             }
             catch (Exception)

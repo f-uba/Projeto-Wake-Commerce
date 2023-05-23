@@ -19,7 +19,7 @@ namespace Application.Handlers
             _mapper = mapper;
         }
 
-        public Task<ICollection<ProductDTO>?> Handle(GetProductListOrderByPropertyCommand request, CancellationToken cancellationToken)
+        public async Task<ICollection<ProductDTO>?> Handle(GetProductListOrderByPropertyCommand request, CancellationToken cancellationToken)
         {
             try
             {
@@ -33,7 +33,7 @@ namespace Application.Handlers
                 };
 
                 var productDtoList = _mapper.Map<ICollection<ProductDTO>>(productList);
-                return Task.FromResult(productDtoList);
+                return await Task.FromResult(productDtoList);
             }
             catch (Exception)
             {
