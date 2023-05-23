@@ -1,6 +1,10 @@
-﻿namespace Application.Commands
+﻿using Domain.Entities.DTOs;
+using MediatR;
+
+namespace Application.Commands
 {
-    internal class GetProductByNameCommand
+    public sealed class GetProductByNameCommand : IRequest<ICollection<ProductDTO>>
     {
+        public string Name { get; set; }
     }
 }

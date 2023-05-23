@@ -95,6 +95,26 @@ namespace WakeCommerce.Controllers
             }
         }
 
+        [HttpGet("Get/ByName")]
+        public async Task<ActionResult<ICollection<ProductDTO>>> GetAsync([FromQuery] GetProductByNameCommand command)
+        {
+            try
+            {
+                if (command is not null)
+                {
+                    var response = await _mediator.Send(command);
+                    if (response is null) return NoContent();
+                    return Ok(response);
+                }
+
+                return BadRequest("Sended a empty query object");
+            }
+            catch (Exception ex)
+            {
+                return Problem(ex.Message);
+            }
+        }
+
         [HttpPut("Update")]
         public async Task<ActionResult<ProductDTO>> PutAsync([FromBody] UpdateProductCommand command)
         {
